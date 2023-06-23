@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta charset="utf-8">
+<head>
+    <link rel = "stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/cloudflare.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <main>
+        <nav class="navbar navbar-default fixed-top" style="background-color: #000E2F">
+            <div class="row">
+                <div class="col">
+
+                   <h1 class = "heady"><b>Mock Food Truck</b></h1>
+                  <button id = "cartBtn" type="button " class="btn btn-primary" data-toggle="modal" data-target="#cart" style="float: right; background-color:#7C878E"><i class="fa fa-shopping-cart"></i> (<span class="total-count"></span>)</button>
+            </div>
+        </nav>
+        
+        <div class="h1" style="font-size: 56pt; color: #000E2F; text-align: center; font-family: Arial, Helvetica, sans-serif, Haettenschweiler,sans-serif; font-weight: bold; margin-top: q0px;">MENU</div><hr>​​​​​​​​​​
+        
+        <div class="container">
+                <div id = "menu_items" class = "col">
+
+                </div>
+              </div>
+            </div>
+
+        
+        </div>
+        <div id = "order" >
+
+        </div>
+        
+
+        
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="show-cart table">
+                  
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+              </div>
+              <div class="modal-footer d-flex" style="display: flex; flex-wrap: nowrap;">
+                  <button class="clear-cart btn btn-danger mr-auto">Clear Cart</button>
+                  <input type="text" id="name-input" placeholder="Enter Name" style="font-size: 20pt;" size="10px">
+                  <button id="order-btn" type="button" class="btn btn-primary order">Order now!</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <footer class="text-center text-lg-start" style="background-color: #000E2F">
+      
+          <!-- Copyright -->
+          <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Reality Interactive</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        
+       
+    </main>
+
+    <script src = "index.js"></script>
+    
+</body>
+</html>
